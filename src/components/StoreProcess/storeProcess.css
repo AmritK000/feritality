@@ -1,0 +1,1049 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.badge-custom {
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+  color: black !important;
+}
+
+.text-decoration-line-through {
+  text-decoration: line-through;
+}
+
+.order-type-button {
+  margin-right: 0.5rem;
+}
+/* // store process personal details */
+.progress-bar-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 20px;
+}
+
+.progress-step {
+  position: relative;
+  text-align: center;
+  flex: 1;
+  padding: 10px 0;
+  border-top: 2px solid #ddd;
+  z-index: 1;
+}
+
+.progress-step::before,
+.progress-step::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: #ddd;
+}
+
+.progress-step::before {
+  left: 0;
+}
+
+.progress-step::after {
+  right: 0;
+}
+
+.progress-step:first-child::before {
+  content: none;
+}
+
+.progress-step.active {
+  color: white;
+  background-color: red;
+}
+
+.progress-step.active::before,
+.progress-step.active::after {
+  background-color: red;
+}
+
+.progress-label {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.progress-step::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 20px solid #ddd;
+}
+
+.progress-step.active::after {
+  border-left-color: red;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.buttons-container .btn {
+  margin: 0 5px;
+}
+
+/* // store process final details start css here */
+.store_process_final_main_div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.store_process_icon_and_success_div {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /* gap: 10px; */
+}
+.store_process_success_div {
+  text-align: justify;
+}
+.store_process_final_details {
+  padding-bottom: 0px !important;
+  margin-bottom: 0px;
+}
+.store_process_estimate_date {
+  font-family: "Segoe UI";
+  font-weight: 400;
+  font-size: 17px;
+  color: #676767;
+}
+.store_process_path2 {
+  color: #f57777;
+}
+.store_process_date_section span {
+  font-family: "Poppins";
+  font-size: 17px;
+  font-weight: 400;
+}
+.store_process_we_will_posted {
+  font-family: "Segoe UI";
+  font-size: 17px;
+  font-weight: 400;
+  color: #585858;
+  padding-inline: 10px;
+}
+.store_check_mark_section div {
+  width: 123px !important;
+  height: 81px !important;
+  overflow: hidden !important;
+  margin: 0px auto !important;
+  outline: none !important;
+}
+.store_check_mark_section div svg {
+  width: 128% !important;
+  height: 105% !important;
+  transform: translate3d(0px, 0px, 0px) !important;
+  content-visibility: visible !important;
+}
+/* // for quantity */
+
+.dowanloadapp_section_for_heading {
+  margin-left: 25px;
+  /* width: 442px; */
+  position: absolute;
+  top: 21px;
+}
+.dowanloadapp_section_for_heading h1 {
+  font-family: Miss Magnolia;
+  color: #e1251b;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 55px;
+  line-height: 40px;
+  margin: 0px;
+}
+
+.dowanloadapp_section_for_heading p {
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Poppins";
+  margin: 0px 0px;
+  /* text-transform: capitalize; */
+  color: #000;
+}
+.store_process_professional_expert {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Poppins";
+  margin: 0px 0px;
+  /* text-transform: capitalize; */
+  color: #000;
+}
+.dowanloadapp_section_for_heading .dowanload_img {
+  width: 65%;
+  margin: 14px 0px;
+}
+.store_process_mobile_sec {
+  background: #f2f2f2;
+  border-radius: 20px;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.store_process_google_app_store {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+  width: 100%;
+}
+.store_process_google_app_store div {
+  display: flex;
+  flex-direction: column;
+  width: 139px;
+  gap: 9px;
+  z-index: 99;
+}
+.store_process_app_pic {
+  position: absolute;
+  top: 27%;
+  left: 37px;
+  overflow: inherit;
+}
+.store_process_app_pic img {
+  height: 350px;
+}
+/* //Store Process css here */
+.store_process_card_name {
+  background: #efefef;
+  padding: 9px;
+  border-radius: 10px;
+}
+.store_process_card_name span {
+  font-family: "Poppins";
+  font-weight: 500;
+  line-height: 27px;
+  font-size: 18px;
+}
+.store_process_product_imge {
+  background: #f2f2f2;
+  text-align: center;
+  width: 110px;
+  border-radius: 15px;
+  padding: 20px;
+}
+.store_process_product_imge img {
+  max-width: 64px;
+  padding: 10px;
+}
+.store_process_product_imge_div {
+  /* margin-left: 0 !important; */
+  border-bottom: 2px solid #f0ecec;
+  width: 100%;
+  /* justify-content: space-around; */
+  margin-left: 0;
+}
+.store_process_rating {
+  width: 15px;
+}
+.store_process_rating_no {
+  font-family: "Segoe UI";
+  font-size: 12px;
+  margin-left: 6px;
+  color: #6f6f6f;
+}
+.store_process_predigree {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+}
+.store_process_predigree_aed {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ff5f5f !important;
+}
+.store_process_for_kg_main_div {
+  display: flex;
+  gap: 10px;
+}
+.store_process_for_kg_main_div .store_process_for_g {
+  background: #fff1f0;
+  padding: 5px 7px;
+  border-radius: 15px;
+  color: red;
+  font-size: 15px;
+}
+.store_process_for_kg_main_div .store_process_for_kg {
+  background: #f3f3f3;
+  padding: 5px 12px;
+  border-radius: 15px;
+  color: #3f3f3f;
+  font-size: 15px;
+}
+.store_process_aed {
+  display: flex;
+  flex-direction: column;
+}
+.store_process_trash_button {
+  display: flex;
+  padding: 4px 20px;
+  color: #dc3545;
+}
+/* .store_process_trash_button:hover {
+  background-color: #fff1f0;
+  color: #dc3545;
+  border: none;
+} */
+/* .store_process_trash_button:focus {
+  border: none !important;
+  box-shadow: none !important;
+} */
+.store_process_trash_button:focus-visible {
+  border: none !important;
+  box-shadow: none !important;
+  background-color: #fff1f0 !important;
+  outline: none;
+}
+.store_process_trash_button:active {
+  background-color: unset !important;
+}
+/* .store_process_last_btn_section {
+  padding-left: 0px;
+} */
+.store_process_last_btn_section {
+  justify-content: flex-end;
+}
+.store_btn_group_for_increment_decrement {
+  border: 1px solid #f4f4f4;
+  border-radius: 31px !important;
+  padding: 2px;
+}
+.store_btn_group_for_increment_decrement button {
+  background: #f4f4f4;
+  border-top-right-radius: 100px !important;
+  border-bottom-right-radius: 100px !important;
+  border-top-left-radius: 100px !important;
+  border-bottom-left-radius: 100px !important;
+  color: black;
+  font-size: 17px;
+  padding: 3px 19px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+.store_btn_group_for_increment_decrement div {
+  width: 45px;
+}
+.store_btn_group_for_increment_decrement button:focus-visible {
+  border: none;
+  background: #f4f4f4;
+  outline: none;
+}
+.store_process_trash_button button {
+  background: #ffebea;
+  color: red;
+  border: none;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 13px;
+  padding: 5px 19px;
+  border-radius: 15px;
+}
+.store_process_payement_deatils_heading h6 {
+  font-family: "Poppins";
+  font-size: 19px;
+  line-height: 28px;
+  font-weight: 500;
+}
+.store_process_payement_deatils_heading_child_div {
+  background: #f9f9f9;
+  padding: 8px 4px;
+  border-radius: 10px;
+  border: 1px solid #dedada;
+}
+.store_process_deatils_price {
+  margin-left: 0;
+}
+.store_process_deatils_price div {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.store_process_select_order {
+  border: 1px solid #dedada;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 10px;
+}
+.store_process_order_type {
+  padding: 5px 8px;
+  background: #f4f4f4;
+  overflow: hidden;
+  /* border-radius: 5px; */
+}
+.store_process_delivery {
+  display: flex;
+  padding: 6px;
+  align-items: center;
+}
+.store_process_delivery small {
+  font-family: "Segoe UI";
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #6f6f6f !important;
+}
+.store_process_active_main {
+  border-left: 1px solid #dedada !important;
+  border-top-left-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
+}
+.store_location_and_delivery img {
+  width: 25px;
+}
+.store_delivery_border {
+  overflow: hidden;
+}
+.store_process_delivery h6 {
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23.94px;
+}
+.store_process_type_order__section h6 {
+  font-family: "Poppins";
+  font-size: 19px;
+  line-height: 28px;
+  font-weight: 500;
+}
+.store_process_payment_details_heading_child_div {
+  padding: 10px;
+  background-color: #f9f9f9 !important;
+  border: 1px solid #ebebeb;
+  border-radius: 10px;
+}
+.store_process_payment_details_heading_child_div table tbody tr td {
+  background-color: #f9f9f9 !important;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.store_process_payment_details_heading_child_div table {
+  margin-bottom: 0 !important;
+}
+.store_process_payment_details_heading_child_div.table tbody tr:last-child {
+  border-bottom: none !important;
+}
+
+/* //Pregress bar css */
+.steps_store_personal_deatils {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
+    "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana,
+    "Verdana Ref", sans-serif;
+  font-size: 13px;
+  line-height: 19px;
+  font-weight: bold;
+  counter-reset: li;
+}
+
+.steps_store_personal_deatils li {
+  list-style-type: none;
+  text-align: center;
+  color: #3a3a3a;
+  /* background: #dae4eb; */
+  position: relative;
+  margin-left: 44px; /* 5px + 2 * 23.5px (arrow_size) */
+}
+
+.steps_store_personal_deatils li::after {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  content: " ";
+  height: 0;
+  width: 0;
+  pointer-events: none;
+  border: solid transparent;
+  border-left-color: #dae4eb;
+  border-width: 23.5px; /* arrow_size */
+  margin-top: -23.5px;
+}
+
+.steps_store_personal_deatils li:first-child {
+  margin-left: 0;
+}
+.steps_store_personal_deatils li {
+  width: 29.65%;
+}
+
+/* .steps_store_personal_deatils li:first-child span {
+  padding: 9px;
+} */
+
+.steps_store_personal_deatils li:first-child span::after {
+  border: none;
+}
+
+.steps_store_personal_deatils li:last-child::after {
+  border-width: 0;
+}
+
+.steps_store_personal_deatils span {
+  display: block;
+  padding: 13px 32.5px 13px 9px; /* padding: 9px, padding + arrow_size */
+  position: relative;
+}
+
+.steps_store_personal_deatils span::after {
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  content: " ";
+  height: 0;
+  width: 0;
+  pointer-events: none;
+  border: solid #efefef;
+  border-left-color: transparent;
+  border-width: 23.5px; /* arrow_size */
+  margin-top: -23.5px;
+}
+
+/* .steps_store_personal_deatils span::before {
+  content: counter(li) ") ";
+  counter-increment: li;
+} */
+
+.steps_store_personal_deatils > li {
+  float: left;
+}
+
+.steps_store_personal_deatils li.current {
+  color: #000;
+  /* background: #7b7b7b; */
+}
+
+.steps_store_personal_deatils li.current::after {
+  border-left-color: #7b7b7b;
+}
+/* .progress_bar_first_step{
+  border-top-left-radius: 10px;
+} */
+.steps_store_personal_deatils li.progress_bar_first_step::after {
+  border-left-color: #b02525 !important;
+}
+.progress_bar_first_step_span {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: #fff;
+  background-color: #e1251b !important;
+  color: #fff;
+  border: none;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 32.52%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  font-size: 18px;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+.steps_store_personal_deatils li.current span::after {
+  border-color: #efefef;
+  border-left-color: transparent;
+}
+.progress_bar_first_step_second_span {
+  background-color: #efefef !important;
+  font-size: 18px;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+.steps_store_personal_deatils li.progress_bar_first_step_second::after {
+  border-left-color: #efefef !important;
+}
+.progress_bar_first_step_third_span {
+  background-color: #efefef !important;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 18px;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+.steps_store_personal_deatils li.progress_bar_first_step_third::after {
+  border-left-color: #5a5454 !important;
+}
+.store_process_heading_name span {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+}
+.store_process_heading_name_main_div {
+  background-color: #efefef;
+  display: flex;
+}
+.store_process_heading_name_main_div p {
+  font-family: "Segoe UI";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 0;
+  padding: 8px;
+}
+/* // Process deatils item deatils css here */
+.delivery-type-container {
+  background-color: #f5f5f5;
+}
+
+.delivery-type-text {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+/* //details pages */
+.steps_store_personal_deatils
+  li.progress_bar_first_step_second_details_page::after {
+  border-left-color: #b02525 !important;
+}
+.progress_bar_first_step_second_span_details {
+  color: #fff;
+  background-color: #e1251b !important;
+  color: #fff;
+  border: none;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 32.52%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  font-size: 18px;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+.details_details::after {
+  border-color: #e1251b !important;
+  border-left-color: transparent !important;
+}
+.store_process_ci_location svg {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.store_process_ci_location img {
+  margin-right: 10px;
+}
+.store_process_instore_collect span {
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23.94px;
+  color: #e1251b;
+}
+.store_process_instore_collect .store_click_collect {
+  font-family: "Segoe UI";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23.94px;
+  color: #6f6f6f !important;
+}
+.store_process_you_are_logged_in {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #6f6f6f;
+  margin-top: 12px;
+  margin-bottom: 7px;
+}
+.store_process_order_item {
+  margin-top: 10px;
+  border-bottom: 2px solid #f0ecec;
+}
+.store_process_order_item h4 {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.quantity_container {
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  padding: 5px 10px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.quantity_container .quantity-text {
+  margin-right: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.quantity_container .quantity-number {
+  font-size: 16px;
+  color: #333;
+}
+.special_notes_container {
+  margin-top: 25px;
+}
+
+.custom_alert {
+  background-color: #6f42c1;
+  border-radius: 15px;
+  text-align: center;
+  padding: 7px;
+  color: white;
+  font-family: "Segoe UI";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+}
+/* .custom_input {
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  border: 1px solid #e0e0e0;
+  padding: 10px 20px;
+} */
+.store_process_form_section form label {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.store_process_form_section form input {
+  box-shadow: none;
+  border-radius: 15px;
+  background-color: #f8f8f8;
+  border: none;
+  margin-top: 10px;
+}
+.store_process_form_section form input:focus {
+  box-shadow: none;
+  border-radius: 15px;
+  border-color: unset;
+  background-color: #f8f8f8;
+}
+.store_process_form_section form input::placeholder {
+  font-family: "Segoe UI";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #000;
+}
+#paymentMethod:checked {
+  accent-color: red !important;
+  background-color: #e10000 !important;
+  border-color: #c81818 !important;
+}
+.store_process_radio_section {
+  padding: 8px 47px;
+  border-radius: 25px;
+  background: white;
+  align-items: center;
+  display: flex;
+  /* text-align: center; */
+  gap: 10px;
+}
+.store_process_radio_section input:checked {
+  accent-color: red !important;
+  background-color: #e10000 !important;
+  border-color: #c81818 !important;
+}
+.store_process_wallet_section {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 20px !important;
+}
+.store_process_wallet_section label {
+  font-family: "Segoe UI";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.store_process_payement_carousls {
+  margin-top: 20px;
+}
+.store_process_payement_carousls_child_div .slick-prev {
+  display: none !important;
+}
+.store_process_payement_carousls_child_div button {
+  display: none !important;
+}
+.store_process_payement_carousls_child_div .slick-next {
+  display: none !important;
+}
+/* .store_process_payement_carousls_child_div
+  .slick-list
+  .slick-track
+  .slick-slide {
+  width: 250px !important;
+} */
+.discount_slide {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+/* .discount_slide div {
+  justify-content: flex-start !important;
+} */
+.discount_details_store_process h5 {
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 29px;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+.store_process_carousls_image {
+  align-items: center !important;
+  display: flex !important;
+  gap: 0px;
+  justify-content: space-between !important;
+  border: 1px solid #e0251b;
+  padding: 5px 26px;
+  border-radius: 15px;
+  background: white;
+}
+.store_process_apply_coupon {
+  margin-top: 10px;
+}
+.store_process_apply_coupon h5 {
+  font-family: "Poppins";
+  font-size: 19px;
+  line-height: 28px;
+  font-weight: 500;
+}
+.store_process_right_input input {
+  width: 100%;
+  padding: 8px 16px;
+  border-radius: 100px;
+  border: 1px solid #d6cdcd;
+  outline: none;
+  background: white;
+  font-size: 16px;
+}
+.store_process_right_input input::placeholder {
+  color: #8c8c8c;
+  font-family: "Segoe UI";
+  font-size: 17px;
+  font-weight: 400;
+}
+.store_process_right_input input:focus {
+  box-shadow: none;
+  border-color: #d6cdcd;
+  /* border: 1px solid black; */
+}
+.same_day_delivery {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  color: #000 !important;
+  line-height: 23.94px !important;
+}
+/* //Delivery Store start css here */
+.delivery_location_svg {
+  padding: 18px 3px;
+}
+.delivery_location_svg svg {
+  color: #fe4646;
+  font-size: 55px;
+}
+.delivery_store_pop_up_div {
+  padding: 30px;
+}
+.delivery_location_svg h5 {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 30px;
+}
+.delivery_location_svg p{
+  color: #3f3f3f;
+  font-family: "Segoe UI";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 26px;
+
+}
+.booking_recieved_main_sec {
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.booking_recived_main_heading {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 26px;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+.booking_recieved_main_sec hr{
+  margin: 8px  !important;
+}
+.booking_deatils_store_name{
+  font-family: "Segoe UI";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21.28px;
+  color: #000;
+}
+.booking_deatils_pet_planet{
+  font-family: "Segoe UI";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.28px;
+  color:#727272;
+  
+}
+
+.justify-content{
+  justify-content: space-between;
+}
+@media only screen and (max-width: 1441px) and (min-width: 1024px) {
+  .dowanloadapp_section_for_heading {
+    margin-left: 0px;
+  }
+  .store_process_google_app_store {
+    gap: 37px;
+  }
+  .store_process_app_pic {
+    position: absolute;
+    top: 33%;
+    left: 38px;
+  }
+  .store_process_app_pic img {
+    height: 312px;
+  }
+  .steps_store_personal_deatils li {
+    width: 29%;
+  }
+  .steps_store_personal_deatils li::after {
+    left: 99%;
+    border-width: 24.5px;
+    margin-top: -24.5px;
+  }
+  .steps_store_personal_deatils li {
+    margin-left: 49px;
+  }
+  .login_modal_popup {
+    width: 96%;
+  }
+}
+/* ToggleSwitch.css */
+.toggle-switch {
+  position: relative;
+  width: 50px;
+  display: inline-block;
+  text-align: left;
+  top: 5px;
+}
+
+.toggle-switch-checkbox {
+  display: none;
+}
+
+.toggle-switch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  height: 25px;
+  padding: 0;
+  line-height: 25px;
+  border: 2px solid #e3e3e3;
+  border-radius: 50px;
+  background-color: #ddd;
+  transition: background-color 0.3s ease-in;
+}
+
+.toggle-switch-label:before {
+  content: '';
+  display: block;
+  width: 17px;
+  margin: 3.5px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 24px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in;
+  height: 17px;
+}
+
+.toggle-switch-checkbox:checked + .toggle-switch-label {
+  background-color: #4caf50;
+}
+
+.toggle-switch-checkbox:checked + .toggle-switch-label:before {
+  right: 0;
+}
+.week-day{
+  display: flex;
+  padding: 0px;
+  list-style: none;
+  margin: 0px;
+}
+.week-day li{
+  padding: 4px 15px;
+  font-size: 15px;
+  font-family: "Poppins";
+  font-weight: 400;
+  border: 1px solid #80808054;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-right: 9px;
+ 
+}
+.selected{
+  background-color: #e1251b !important;
+  color: #fff;
+}
+.datepicker{
+  width: 100%;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 100px;
+  background-color: #fff;
+}
+
+.date_picker .calnder_icon{
+  position: absolute;
+    right: 16px;
+    top: 9px;
+    color: rgba(225, 37, 27, 1);
+}
+.react-datepicker-wrapper{
+  width: 100%;
+}
+.date_picker{
+  position: relative;
+}

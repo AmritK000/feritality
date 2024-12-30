@@ -1,0 +1,262 @@
+.adoption_info .pet_avenue img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.adoption_info .row{
+    background: rgba(244, 244, 244, 1);
+    padding: 15px 15px;
+    border-radius: 15px;
+}
+.adoption_info .col-md-3{
+    padding: 0px;
+}
+.adoption_info .pet_avenue img{
+    height: 174px;
+    width: 176px;
+    border-radius: 11px;
+}
+.adoption_info .pet_avenue p{
+    transform: translate(18px, -10px);
+    border-radius: 10px;
+    padding: 7px;
+    width: 137px;
+}
+.adoption_info .ceter_fac{
+    padding: 0px;
+    margin: 10px 0px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  
+}
+.adoption_info .ceter_fac li{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    margin-right: 12px;
+}
+.adoption_info .ceter_fac li:last-child ,
+.dogdetails_info li:last-child {
+    margin-right: 0px;
+}
+.adoption_info ul li {
+    margin-left: 0px;
+}
+.adoption_info button a{
+    color: #fff;
+    text-decoration: none;
+}
+.adoption_info button{
+    transition: 0.3s;
+    background: rgba(225, 37, 27, 1);
+    background: linear-gradient(45deg, rgb(141 24 18), rgb(225 37 27));
+    padding: 8px 25px;
+    border-radius: 100px;
+    border: none;
+}
+.adoption_info .pet_details{
+    padding: 0px;
+}
+.textend{
+    text-align: end;
+}
+.time_adoptionpet ,.time_adoptionpet #dots{
+    color: rgba(63, 63, 63, 1);
+    line-height: 26px !important;
+    margin: 0px;
+    text-align: left !important;
+    opacity: 80%;
+}
+.grooming_board a{
+    text-decoration: none;
+}
+.adopt_detailes .col-md-3{
+padding: 0px;
+}
+
+.view_btn input{
+    position: relative;
+    border-radius: 100px;
+    padding: 8px 22px;
+    border: 2px solid rgba(233, 233, 233, 1);
+    width: 100%;
+    margin: 7px 0px;
+}
+.view_btn .search_btn{
+    background: linear-gradient(0deg, #E1251B, #E1251B), linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    color: #fff;
+    border: 0px;
+    line-height: 12px;
+    padding: 7px;
+    position: absolute;
+    /* left: 309px; */
+    border-radius: 15px;
+    right: 7px;
+    top: 14px;
+}
+.adopt_dogdetails{
+    margin: 52px 0px 0px;
+}
+.new_insights a{
+    color: #fff !important;
+}
+.new_insights{
+    padding: 14px 20px !important;
+   
+}
+.adoptionstore_details{
+width: 100%;
+display: flex;
+flex-direction: row;
+}
+.adoptionstore_details img{
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-right: 17px;
+}
+.direction_details{
+    display: flex;
+    flex-direction: column;
+}
+.get_direction{
+    color: #be2017 !important;
+    font-weight: 600;
+}
+.delivery_info span{
+    font-weight: 600;
+    color: #000;
+}
+.delivery_info{
+    text-align: left !important;
+    margin: 0px 0px 3px;
+    font-size: 16px !important;
+    line-height: 24px !important;
+}
+.dogdetails_info{
+    padding: 0px;
+    margin: 12px 0px;
+    display: flex;
+    list-style: none;
+}
+.character_stics,
+.dogdetails_info li {
+    display: flex;
+    flex-direction: row;
+    background: rgba(243, 243, 243, 1);
+    padding: 11px 13px;
+    border-radius: 10px;
+    margin-right: 13px;
+}
+.dogdetails_info li img{
+    width: 40px !important;
+    height: 40px !important;
+    background-color: #fff;
+    padding: 7px;
+    border-radius: 100px;
+}
+.adoptionstore_details p{
+text-align: left !important;
+margin: 0px !important;
+}
+.dogdetails_info li h1,
+.character_stics h2,
+.adoptionstore_details h1{
+    font-family: Segoe UI;
+    font-size: 18px;
+    text-align: left;
+    line-height: 28px;
+    margin: 0px;
+    font-weight: 600;
+}
+.doginfo_dtailsinnersection{
+
+}
+.whatsapp_icon{
+    border: none;
+    border-radius: 100px;
+    padding: 8px 20px;
+    font-family: Segoe UI;
+    font-size: 17px;
+    margin-right: 10px;
+    background: linear-gradient(0deg, #1FBD66, #1FBD66), linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+.connect_btn{
+    padding: 0px;
+    margin: 0px;
+}
+.whatsapp_icon a
+,.call a{
+    color: #fff;
+     font-family: Segoe UI;
+    font-size: 17px;
+}
+.call{
+    border: none;
+    border-radius: 100px;
+    padding: 8px 20px;
+    background: linear-gradient(0deg, #E1251B, #E1251B),
+linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+
+}
+.whatsapp_icon i{
+font-size: 22px;
+    margin-right: 7px;
+}
+.adopt_now{
+    position: relative !important;
+    bottom: -11px !important;
+}
+.inner_sec{
+text-align: left !important;
+color: rgba(111, 111, 111, 1) !important;
+
+}
+.cafe_gallery {
+    display: flex;
+    padding: 0px;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.cafe_gallery img{
+width: 150px;
+height: 150px;
+}
+.cafe_gallery img {
+    width: 159px;
+    height: 134px;
+    border-radius: 15px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+#addreviews{
+    position: relative;
+    margin: 0px;
+    color: #000;
+}
+#addreviews span{
+    color: #000;
+}
+.pet_slidercontainer{
+    margin-left: 60px;
+    overflow: hidden;
+}
+.location_users{
+    display: flex;
+    align-items: center;
+}
+.location_view{
+    color: #000;
+}
+.adoptionstore_details p{
+    font-size: 13px !important;
+}
+.aoption_para_a_main_div a{
+color: #000;
+}

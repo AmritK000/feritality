@@ -1,0 +1,32 @@
+.error_vn_login {
+    border: 1.12665px solid #e11d48!important;
+}
+
+.login-error {
+    font-size: 14px ;
+    color:#e11d48;
+    margin-bottom: 0rem !important;
+    padding-top: 2px;
+}
+.otp-error{
+    color:#e11d48;
+    font-size: 14px ;
+    margin-top: -20px;
+    margin-bottom: 25px;
+}
+.error{
+    color:#e11d48;
+    font-size: 14px ; 
+}
+.VendorInputError{
+    border: 1px solid #e11d48 !important;
+    border-radius: 50px;
+}
+#error_feedback{
+    color: #e11d48 !important;;
+    font-size: 14px !important; 
+}
+.VendorInputSuccess{
+    border: 1px solid #63e949 !important;
+    border-radius: 50px;
+}

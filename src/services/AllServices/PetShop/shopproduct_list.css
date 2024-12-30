@@ -1,0 +1,80 @@
+.grooming_board_productcard .img_container{
+    background: rgba(244, 244, 244, 1);
+    padding: 47px 27px;
+    border-radius: 10px;
+    text-align: center;
+}
+/* styles.css or any relevant CSS file */
+
+
+.grooming_board_productcard .add_review {
+    display: flex;
+    margin: 1px 0px;
+    align-items: center;
+    position: relative !important;
+}
+.grooming_board_productcard button{
+    background: linear-gradient(0deg, #E1251B, #E1251B), linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 9px 7px;
+    font-size: 17px;
+    font-weight: 400;
+    --common-font: "Poppins", sans-serif;
+    border-radius: 100px;
+}
+.product_size p
+.product_price p{
+    font-size: 17px;
+    font-weight: 400;
+    --common-font: "Poppins", sans-serif;
+    margin: 0px;
+}
+.product_price p{
+    font-weight: 600;
+}
+.product_price strike{
+    color: #e1251b;
+    font-weight: 600;
+    margin-left: 17px;
+}
+.petshopbanner{
+    position: absolute;
+    top: 30px;
+    width: 454px;
+    text-align: center;
+    left: 102px;
+}
+.petshopbanner h1{
+    color: rgba(0, 0, 0, 1);
+    font-size: 24px;
+    font-weight: 500;
+    --common-font: "Poppins", sans-serif;
+    line-height: 33px;
+}
+.petshopbanner p{
+    color: rgba(225, 37, 27, 1);
+    font-size: 26px;
+    font-weight: 700;
+    --common-font: "Poppins", sans-serif;
+    text-transform: capitalize;
+}
+.petshopbanner button{
+    background: rgba(225, 37, 27, 1);
+    border-radius: 100px;
+    border: none;
+    padding: 10px 27px;
+    color: #fff;
+    font-weight: 500px;
+    margin-top: 12px;
+    --common-font: "Poppins", sans-serif;
+    border: 2px solid #fff;
+}
+.petshopbanner button:hover{
+    color: rgba(225, 37, 27, 1);
+    background: #fff;
+    --common-font: "Poppins", sans-serif;
+    border: 2px solid #e1251b;
+   
+}

@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* PetProfileForm.css */
+
+.container {
+  max-width: 1200px;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.all_heading_for_all_frisbee_project_main {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 36px;
+  font-family: "Poppins", sans-serif;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h1 span,
+h3 span {
+  color: #d32f2f;
+}
+
+.text-center p {
+  font-size: 1rem;
+  color: #777;
+}
+
+.form-control {
+  height: 45px;
+  border-radius: 5px;
+}
+
+.form-select {
+  height: 45px;
+  border-radius: 5px;
+}
+
+.upload-box {
+  border: 2px dashed #ddd;
+  padding: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  color: #999;
+  position: relative;
+  background: #f9f9f9;
+}
+
+.upload-box input[type="file"] {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.upload-box .upload-label {
+  display: block;
+  padding: 30px 0;
+}
+
+.btn-danger {
+  background-color: #d32f2f;
+  border-color: #d32f2f;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+}
+
+.btn-outline-danger {
+  border-color: #d32f2f;
+  color: #d32f2f;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+}
+
+.btn-outline-danger:hover {
+  background-color: #d32f2f;
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .upload-box {
+    margin-top: 20px;
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+
+  .text-center img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.create_pet_profile_main_div_div {
+  padding-bottom: 0 !important;
+  padding-right: 0 !important;
+}
+.create_pet_profile_main_section {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.create_pet_parent_details_section {
+  background-color: #f2f2f2;
+  padding: 15px 5px 15px 12px;
+  border-radius: 15px;
+}
+/* UploadPetPicture.css */
+.upload_container {
+  width: 203px;
+  height: 188px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.upload_box {
+  width: 169px;
+  height: 152px;
+  background-color: #ffecec;
+  border-radius: 10px;
+  text-align: center;
+}
+.upload_box_for_animal {
+  width: 169px;
+  height: 152px;
+  /* background-color: #ffecec; */
+  border-radius: 10px;
+  text-align: center;
+}
+.upload_box_for_animal img {
+  max-height: 150px;
+}
+.upload_icon i {
+  font-size: 2rem;
+  color: #b2b2b2;
+}
+.upload_icon svg {
+  font-size: 55px;
+  color: #ccc1c0;
+}
+.upload_text {
+  color: #e74c3c;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+}
+.create_pet_profile_right_section_get_expert {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.cretae_pet_profile_form_div_sec {
+  margin-left: 0 !important;
+}
+.cretae_pet_profile_form_div_sec div h4 {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 20px;
+  /* margin-left: 15px; */
+}
+.create_pet_for_profile_input {
+  padding-right: 0 !important;
+}
+.login_user_otp_for_bottom_button_create_pet {
+  display: flex;
+  /* width: 100%; */
+  justify-content: space-between;
+  margin-top: 17px;
+  text-align: center;
+  align-items: center;
+}
+.create_pet_profile_for_skip_for_now {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.login_user_otp_for_bottom_button_skip .user_otp_second {
+  background: #ffebea;
+  color: red;
+  border: none;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+}
+.create_pet_back_button {
+  border: 1px solid #e9e9e9 !important;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Poppins";
+}
+.create_pet_back_button:hover {
+  border: 1px solid #e9e9e9;
+  /* color: black !important; */
+}
+.create_pet_back_button:focus-visible {
+  border: none !important;
+  box-shadow: none;
+  outline: none;
+}
+.create_pet_back_button:active {
+  border-color: #e9e9e9 !important;
+}
+.login_user_otp_for_bottom_button_skip .user_otp_second:hover {
+  background: #ffebea;
+  color: red;
+  /* border: 1px solid #e9e9e9; */
+}
+.login_user_otp_for_bottom_button_skip .user_otp_second:focus-visible {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+.login_user_otp_for_bottom_button_skip .user_otp_first:hover {
+  border: none;
+  color: #fff;
+}
+.login_user_otp_for_bottom_button_create_pet .user_otp_first {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  background-color: red !important;
+  color: #fff;
+  border: none;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 32.52%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+}
+.create_pet_for_gender_in_login {
+  position: relative;
+}
+.enter_owner_deatils_button button {
+  border: 1px solid #e1251b !important;
+  background-color: #fff !important;
+  color: #e1251b !important;
+  font-size: 16px;
+  font-family: "Poppins";
+}
+.create_pet_for_gender_in_login {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>')
+    no-repeat right 10px center;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #bababa;
+}
+.login_user_otp_for_bottom_button_create_pet .user_otp_first:hover {
+  border: none;
+  color: #fff;
+}
+.login_user_otp_for_bottom_button_create_pet .user_otp_second {
+  background: #ffebea;
+  color: red;
+  border: none;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+}
+.login_user_otp_for_bottom_button_create_pet .user_otp_second:hover {
+  background: #ffebea;
+  color: red;
+  border: none;
+}
+.login_user_otp_for_bottom_button_create_pet .user_otp_second:focus-visible {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+.store_input_field_field_for_Create_pet {
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-family: "Poppins";
+  padding: 9px 20px;
+}
+.store_input_field_field_for_Create_pet::placeholder{
+  color: #bababa;
+}
+.store_input_field_field_for_Create_pet:focus {
+  box-shadow: none;
+  border: none;
+}
+.create_pet_profile_for_pet_profile h2 {
+  font-family: "Poppins";
+  font-size: 26px;
+  font-weight: 400  !important;
+  line-height: 33px;
+}
+.create_pet_profile_for_pet_profile h2 span{
+  font-family: "Poppins";
+  font-size: 26px;
+  font-weight: 500  !important;
+  line-height: 33px;
+}
+.create_pet_profile_for_pet_profile p {
+  font-family: "Segoe UI";
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/* /// */
+.frisbee_main_section_div_child_create_pet_profile {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 19px;
+  margin-bottom: 0px;
+}
+.frisbee_main_section_div_child_create_pet_profile span {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+}
+.frisbee_main_section_div_child_create_pet_profile .login_professional_servies {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 22px !important;
+  line-height: 40px;
+}
+.create_verify_owner_deatils_form_section{
+padding-right:  0 !important;
+}
+/* .create_pet_profile_downlaod_the_app {
+  background: #2b3a4b;
+} */
+/* .create_pet_profile_downlaod_mobile_app {
+  background: #101820;
+  height: 200px;
+} */
+/* .create_pet_profile_downlaod_mobile_app img{
+
+} */
+.cross{
+  position: absolute;
+  right: -4px;
+  background-color: #e1251b;
+  padding: 6px 11px 9px;
+  border-radius: 100px;
+  top: 68px;
+  color: #fff;
+}
+.create_pet_profile_main_div_div{
+  position: relative;
+}

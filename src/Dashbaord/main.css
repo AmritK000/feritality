@@ -1,0 +1,1113 @@
+
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+}
+@font-face {
+    font-family: "Segoe UI";
+    src: url("../../public/font/SegoeUI.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+ul{
+    margin: 0px;
+    padding: 0px;
+   list-style: none;
+
+}
+.dashbar_info{
+    margin: 0px 8px;
+}
+.sidebar{
+    width: 109px;
+    background: rgba(16, 24, 32, 1);
+    position: fixed;
+    height: 100vh;
+    padding: 18px 9px;
+    overflow-y: auto;
+}
+.sidebar ul li img{
+    width: 23px;
+    margin: 1px auto;
+    height: 26px;
+}
+.top_navbar{
+    border: 1px solid rgba(234, 234, 234, 1);
+    position: fixed;
+    width: 89%;
+    margin-left: 123px;
+    border-radius: 10px;
+    padding: 9px 0px;
+    margin-top: 14px;
+    z-index: 9999;
+    background-color: #fff;
+}
+.sidebar p{
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    font-size: 13px;
+    line-height: 25px;
+    margin: 0px;
+    display: none;
+}
+.sidebar ul li{
+    text-align: center;
+}
+.bar_icon{
+    border: 2px solid rgba(255, 255, 255, 0.13);
+    border-radius: 10px;
+    text-align: center;
+    margin: 8px 19px 8px;
+    padding: 6px;
+    color: #fff;
+}
+.sidebarlogo{
+    width: 86%;
+margin-bottom: 14px;
+}
+.active p{
+display: block;
+}
+.active .bar_icon{
+    background-color: #fff;
+}
+.active .bar_icon img{
+    filter: brightness(0.15) sepia(1) hue-rotate(-50deg) saturate(31);
+}
+/* Style the width of the scrollbar */
+::-webkit-scrollbar {
+    width: 5px; 
+    height: 5px;
+  }
+  
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+  }
+  
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  .dashbaord_logo{
+    display: flex;
+    align-items: center;
+  }
+  .top_navbar .username{
+    font-size: 16px;
+    margin: 0px;
+    margin-left: 15px;
+  }
+  .cart_item{
+    display: flex;
+    justify-content: end;
+  }
+  .cart_item li{
+    position: relative;
+  }
+  .icon{
+    color: #A5A9AD;
+    font-size: 22px;
+    position: relative;
+    z-index: 9999999999999;
+  }
+  .bonses_icon{
+    color: #E1251B;
+    font-size: 32px;
+    position: relative;
+
+  }
+  .avl_bal{
+    position: absolute;
+    left: -51px;
+    color: #fff;
+    top: 3px;
+    font-size: 13px;
+  }
+  .img_total{
+    position: absolute;
+    left: -75px;
+    right: 0px;
+    top: -21px;
+    width: 67px;
+  }
+  .increse_no{
+    background: #18242F;
+    background: #18242F;
+    border-radius: 100px;
+    padding: 4px 8px;
+    color: #fff;
+    font-size: 8px;
+    position: relative;
+    left: -4px;
+    z-index: -1;
+    top: -7px;
+  }
+  .pr{
+    padding-right: 0px;
+  }
+  .main_wrapper{
+    padding: 72px 0px;
+    margin-left: 115px;
+    width: 91%;
+    overflow: hidden;
+  }
+  .notification_sections{
+    background: #EEF3F6;
+    padding: 10px 10px;
+    border-radius: 10px;
+  }
+  .heading{
+    color: #e1e8ed !important;
+
+  }
+  .heading,
+  .notification_sections h1{
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0px;
+    text-align: left;
+    font-size: 34px;
+    margin: 0px;
+  }
+  .notification_list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2px;
+    margin-bottom: 8px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 6px;
+  }
+  .notification_img{
+    border: 2px solid #607d8b30;
+    padding: 11px 11px;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .notification_list p{
+    margin: 0px;
+    color: #6F6F6FF5;
+    font-family: "Segoe UI";
+    font-size: 13px;
+    line-height: 21px;
+  }
+ 
+  .notification_list h2{
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    margin: 0px;
+  }
+  .sub_heading_dash{
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  .quick_info,
+  .qucik_dashboard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  .quick_info{
+    border: 2px solid #ECF1F4;
+    padding: 11px;
+    border-radius: 10px;
+    margin: 6px;
+    width: 199px;
+    align-items: start !important;
+}
+.quick_info h2{
+    color: #E1251B;
+    margin: 0px;
+    font-weight: 500;
+    font-size: 22px;
+}
+.pet_avenues,
+.order_deatils h1,
+.wallet_list span,
+.add_address h1,
+.recent_info h2,
+.location_avenue p,
+.quick_info p{
+    color: #3F3F3F;
+    margin: 0px;
+    font-size: 13px;
+    line-height: 28px;
+    font-weight: 500;
+}
+.wallet_list p,
+.add_address p,
+.recent_info p,
+.location_avenue h2{
+    color: #3F3F3F;
+    font-size: 15px;
+    margin: 0px;
+    font-family: "Segoe UI";
+}
+.quick_info img{
+    width: 35px;
+}
+.card_box{
+    border: 2px solid #ECF1F4;
+    padding: 11px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.quick_info:hover{
+    background: linear-gradient(0deg, #2E3F51, #2E3F51),
+linear-gradient(103.78deg, rgba(16, 24, 32, 0) 48.84%, rgba(16, 24, 32, 0.5) 100%);
+
+}
+.quick_info:hover p,
+.quick_info:hover h2{
+    color: #fff;
+}
+.location_avenue{
+    background: #F4F4F4;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.location_avenue svg{
+    color: #E1251B;
+    font-size: 14px;
+}
+.location_avenue img{
+    width: 51px;
+    height: 51px;
+    border-radius: 10px;
+    margin-right: 9px;
+    object-fit: cover;
+}
+.recent_info:nth-child(2) div{
+    width: 100%;
+}
+.recent_info img{
+    width: 101px;
+    height: 95px;
+    border-radius: 10px;
+    margin-right: 16px;
+}
+.recent_info  button{
+    background: #FFECEB91;
+    color: #E1251B;
+    font-size: 15px;
+    margin: 0px;
+    font-family: "Segoe UI";
+    border: none;
+    border-radius: 100px;
+    padding: 6px 20px;
+}  
+.Complete{
+    color: #009A12 !important;
+    background: #E6F6E8 !important;
+
+}
+.recent_img_info{
+    background: #F4F4F4;
+    border-radius: 10px;
+    height: 100px;
+    margin-right: 11px;
+    width: 100px;
+}
+
+.recent_img_info img{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    /* margin-right: 16px; */
+    margin: 8px auto;
+    
+}
+.notification_sections ul{
+    height: 232px;
+    overflow-y: auto;
+}
+.enquiery_banner{
+    background-image: url(../../public/frisbeeImage/dashboard_img/bg_banner.png);
+    height: 300px;
+    background-size: cover;
+    text-align: center;
+    padding: 16px;
+    margin: 13px 0px;
+    border-radius: 10px;
+}
+.enquiery_banner h2{
+    font-size: 15px;
+    text-align: center;
+}
+.enquiery_banner button{
+    border-radius: 100px;
+    border: 1px solid #fff;
+ color: #fff;
+ font-size: 14px;
+    padding: 7px 20px;
+ background-color: #E1251B;
+ font-family: "Segoe UI";
+}
+.enquiery_banner h3{
+    font-size: 15px;
+    text-align: center;
+    line-height: 25px;
+}
+.inner_section .heading{
+    font-size: 31px;
+}
+.inner_section .sub_heading_dash{
+    font-size: 17px;
+}
+.edit_btn{
+    background-color: #fff;
+    border: 1px solid #e1251b;
+    font-size: 13px;
+    padding: 6px 23px;
+    border-radius: 100px;
+    color: #e1251b;
+    margin-top: 6px;
+    transition: .3s;
+}
+.edit_btn:hover{
+  background-color: #e1251b;
+  color: #fff;
+  border-color: #fff;
+}
+ 
+.textalign_right{
+    text-align: end;
+}
+.add_address{
+  border: 1px solid #ECF1F4;
+  border-radius: 10px;
+  padding: 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.add_address:hover h1{
+  color: #e1251b;
+}
+.drop_down_item{
+  z-index: 99;
+  position: absolute;
+  right: 30px;
+    top: 21px;
+    background-color: #fff;
+    border: 3px solid #ECF1F4;
+    padding: 9px;
+    box-shadow: 0px 0px 10px 0px #0000001A;
+    border-radius: 13px;
+}
+.dropdown-item button{
+  border: none;
+  background-color: #fff;
+  border-radius: 100px;
+  padding: 5px 20px;
+  border: 1px solid #EAEAEA;
+  margin-bottom: 7px;
+  font-size: 13px;
+  width: 119px;
+  color: #e1251b;
+}
+.dropdown-item button:hover{
+  color:  #fff;
+  background-color: #e1251b;
+}
+.walltes_info p{
+  margin: 0px;
+  line-height: 21px;
+}
+.walltes_info span{
+  color: #E1251B;
+
+}
+.walltes_info{
+  border: 2px solid #E8E8E8;
+  padding: 7px 12px;
+  text-align: center;
+  border-radius: 10px;
+}
+.earned_treats{
+  background: #594395;
+    color: #fff;
+    border-radius: 10px;
+    padding: 9px 15px;
+    margin-left: 15px;
+}
+.earned_treats h2{
+  font-family: "Segoe UI";
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 17px;
+}
+.wallet_details{
+  display: flex;
+  justify-content: end;
+}
+.earned_treats  h3{
+  font-size: 16px;
+  margin-left: 11px;
+}
+/* wallets_page*/
+.wallet_list{
+  display: flex;
+  justify-content: space-between;
+  background: #F4F4F4;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.wallet_list span{
+  font-weight: 600;
+  color: #000000;
+  margin-left: 5px;
+  font-size: 13px;
+}
+.wallet_list .credit{
+  color: #00A52C;
+  font-size: 20px;
+  margin: 26px 0px 0px;
+}
+.wallet_list .debit{
+  margin: 26px 0px 0px;
+  color:#E1251B;
+  font-size: 20px;
+}
+.services_listing{
+  display: flex;
+  white-space: nowrap;
+  overflow: auto;
+  margin-bottom: 15px;
+}
+.services_listing li button{
+  border: none;
+  background-color: #ffffff00;
+}
+.services_listing li{
+  display: flex;
+  border: 1px solid #E6E6E6;
+  padding: 6px 10px;
+  border-radius: 100px;
+  margin-right: 9px;
+}
+.services_listing li img{
+  background: #EFEFEF;
+  padding: 7px;
+  width: 32px;
+  border-radius: 100px;
+}
+.services_listing p{
+  margin: 0px;
+  font-size: 13px;
+}
+.services_listing .active{
+  background: linear-gradient(45deg, rgb(141 24 18), rgb(225 37 27));
+ 
+}
+.services_listing .active p{
+  color: #fff;
+}
+.pet_profile,
+.parents_details{
+  background: #EEF3F6;
+  padding: 15px 0px;
+  border-radius: 10px;
+  margin-bottom: 11px;
+}
+.pet_profile input,
+.pet_profile select,
+.parents_details select,
+.parents_details input{
+  background-color: #fff;
+  width: 100%;
+  border: none;
+  padding: 8px 20px;
+  margin-bottom: 10px;
+  border-radius: 100px;
+  position: relative;
+  font-size: 13px;
+}
+
+.verfied_input{
+  position: relative;
+}
+.verified{
+  position: absolute;
+    right: 24px;
+    top: 9px;
+    color: green;
+    font-size: 13px;
+}
+.inner_pages_footer {
+  background: linear-gradient(0deg, #304254, #304254),
+linear-gradient(101.62deg, rgba(0, 0, 0, 0) 23.55%, rgba(0, 0, 0, 0.2) 93.36%);
+border-radius: 40px;
+    padding: 16px;
+    margin: 10px 0px;
+    position: relative;
+}
+.inner_pages_footer img{
+  width: 100%;
+}
+.footer_logo{
+  width: 81px !important;
+    background-color: #fff;
+    border-radius: 100px;
+    padding: 14px;
+}
+.inner_pages_footer h2{
+  color: #fff;
+    font-family: Miss Magnolia;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    margin: 0;
+    text-transform: uppercase;
+}
+.inner_pages_footer p{
+  font-family: "Poppins", sans-serif;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    text-transform: capitalize;
+}
+.foote_print_img{
+  width: 116px !important;
+  position: absolute;
+  top: -7px;
+  right: 27%;
+}
+.blur-content {
+  opacity: 50%;
+  pointer-events: none; /* Prevent interaction with blurred content */
+}
+.parents_details input:focus-visible{
+  outline: 1px solid #e1251b;
+}
+.pet_profile_img {
+ position: relative;
+ width: 177px;
+}
+.pet_profile_img img{
+  width: 145px;
+    border-radius: 10px;
+    margin: 0px 12px;
+    height: 126px;
+}
+.edit_delete {
+  position: absolute;
+  top: 0px;
+  transform: translate(50px, 82px); 
+ }
+ .edit_delete button{
+  background: #FFFFFF;
+    border: none;
+    border-radius: 100px;
+    padding: 4px 8px;
+    color: #e1251b;
+    margin-right: 5px;
+ }
+ .pet_profile  select,
+ .pet_profile  input{
+  margin: 3px 5px 5px;
+  padding: 7px 14px;
+  font-size: 12px;
+ }
+ .data_no_coming img{
+  width: 30%;
+    margin: auto auto 10px;
+ }
+ .data_no_coming p{
+  text-align: center;
+  margin-bottom: 10px;
+ }
+ .grooming_listing{
+  padding: 10px;
+  box-shadow: 0px 0px 10px 0px #00000014;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 10px;
+ }
+ .grooming_listing img{
+  border-radius: 10px;
+    width: 100%;
+    height: 79px;
+    object-fit: cover;
+ }
+ .order_id ,
+.grooming_listing h1{
+  font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #676767;
+    font-weight: 400;
+
+}
+.order_deatils .order_id strong,
+.grooming_listing strong{
+  color: #000000 !important;
+ font-weight: 400;
+}
+.grooming_listing .d-flex{
+  align-items: center;
+  width: 100%;
+}
+.order_timelist,
+.grooming_listing .order_timelist{
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+.book_deatils  .order_timelist li,
+.grooming_listing .order_timelist li{
+  border: 1px solid #0000001A;
+    padding: 8px 15px;
+    border-radius: 100px;
+    margin-right: 10px;
+    height: 34px;
+}
+.datewise p,
+.pet_detailsinfo p,
+.order_timelist p{
+  margin: 0px;
+  font-size: 14px;
+  line-height: 16px;
+  
+
+}
+.datewise span,
+.pet_detailsinfo p span,
+.order_timelist span{
+  color: #8D8D8D;
+
+}
+.listing_leftimg{
+  width: 129px;
+    margin-right: 15px;
+}
+.listingrightside{
+  width: 100%;
+}
+.order_timelist li:last-child {
+  margin-right: 0px;
+}
+.process_pending{
+  color: green !important;
+  text-transform: capitalize;
+}
+
+.grooming_listing h2{
+  font-family: "Segoe UI";
+    color: #242424;
+    font-size: 16px;
+    margin: 0px;
+}
+.process_com{
+  color: red !important;
+
+}
+.petforms h2,
+.service_provide,
+.grooming_listing p{
+  margin: 0px;
+  color: #8D8D8D;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.session{
+  text-align: center;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  padding: 14px 0px 0px;
+  margin: 0px;
+  line-height: 19px;
+}
+.petforms .location,
+.session span{
+  color: #E1251B;
+}
+.cross_btn{
+  position: absolute;
+  right: -4px;
+  top: -18px;
+  background: #FFF1F0;
+  color: #E1251B;
+  padding: 7px;
+  border-radius: 100px;
+  z-index: 9999;
+  cursor: pointer;
+  width: 33px;
+  height: 33px;
+}
+.cancel_pop{
+  text-align: center;
+  background-color: #ffffff5e;
+
+}
+.no_btn{
+  background: linear-gradient(0deg, #E1251B, #E1251B),
+linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+padding: 6px 20px;
+border-radius: 100px;
+border: none;
+color: #fff;
+font-size: 12px;
+margin-left: 10px;
+}
+.yes_btn{
+  background: #FFF1F0;
+  color: #E1251B;
+  padding: 6px 20px;
+  border-radius: 100px;
+  border: none;
+  
+  font-size: 12px;
+}
+.reschdule_popup p,
+.cancel_pop p{
+  font-family: "Segoe UI";
+  color: #3F3F3F;
+  font-size: 16px;
+  margin: 0px 0px 13px;
+}
+.reschdule_popup .modal-header,
+.cancel_pop .modal-header{
+  border: none;
+}
+.reschdule_popup .modal-title,
+.cancel_pop .modal-title{
+  width: 100%;
+}
+.cancel_pop .modal-dialog{
+  width: 215px !important;
+}
+.cancel_pop .modal-dialog {
+
+  transform: translate(0, 133%) !important;
+}
+.reschdule_popup input{
+  border: 1px solid #E9E9E9;
+  border-radius: 100px;
+  display: flex;
+  width: 100%;
+  padding: 6px 20px;
+  margin-bottom: 10px;
+  flex-direction: column;
+}
+.reschdule_popup button{
+  width: 119px;
+  margin: auto;
+  padding: 9px;
+  background: #FFF1F0;
+  color: #E1251B;
+   font-size: 15px;
+}
+.reschdule_popup{
+  text-align: center;
+}
+
+  .reschdule_popup .show .modal-dialog {
+    transform: none;
+    transform: translate(0, 100px);
+  }
+
+.order_timelist p{
+  color: #242424;
+
+}
+.order_deatils{
+  background: #F5F5F5;
+  border-radius: 10px;
+  padding: 15px;
+}
+.arrow_btn{
+  background-color: #fff;
+  padding: 8px 12px;
+  border-radius: 100px;
+  color: #000;
+  font-size: 17px;
+  margin-right: 12px;
+}
+.order_id{
+  display: flex;
+  margin: 0px;
+}
+.down_loads_btns{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+}
+.down_loads_btns button{
+margin-left: 10px;
+}
+.petforms{
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+.pet_reviews img{
+  width: 100%;
+  position: relative;
+  height: 82px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.petforms .pet_reviews{
+  position: relative;
+}
+.petforms span{
+  position: absolute;
+    left: 34px;
+    bottom: 0px;
+    color: #fff;
+}
+.star{
+  color:  #FF7800;
+
+}
+.repeat_selected_days,
+.book_deatils{
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 13px;
+  display: flex;
+  align-items: center;
+}
+.order_deatils .row{
+  width: auto!important ;
+}
+
+.order_deatils h2,
+.book_deatils  h2{
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+}
+.payment_details ul{
+  background: #FFFFFF;
+  border: 1px solid #EBEBEB;
+  padding: 10px;
+    border-radius: 10px;
+}
+.payment_details ul li{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  font-size: 14px;
+  border-bottom: 1px solid #EBEBEB;
+  padding: 10px 0px;
+}
+.payment_details ul li:last-child{
+  border-bottom: 0px solid #EBEBEB;
+  padding-bottom: 0px;
+}
+.payment_details span{
+  text-transform: capitalize;
+}
+.payment_details p{
+ margin-bottom: 0px;
+}
+.decrease{
+  color: #E15E5E;
+
+}
+.pet_detailsinfo{
+  background-color: #fff;
+    padding: 11px;
+    border-radius: 10px;
+}
+.pet_detailsinfo img{
+width: 100%;
+border-radius: 8px;
+}
+.pet_detailsinfo p{
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+}
+.location_avenuess{
+font-size: 14px !important;
+}
+.rating_stars{
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+.rating_reviwesvalues{
+  color: #000 !important;
+  margin-left: 10px !important;
+}
+.reshdule{
+  background: linear-gradient(45deg, rgb(141 24 18), rgb(225 37 27)) !important;
+  color:#fff;
+  border:none;
+  border-radius: 100px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #E1251B;
+  padding: 6px 25px;
+}
+.reshdule:hover{
+  background: linear-gradient(45deg, rgb(141 24 18), rgb(225 37 27)) !important;
+  color:#fff;
+}
+.canel_btn{
+  background: #FFFFFF;
+  color: #E1251B;
+  border:none;
+  border-radius: 100px;
+  font-size: 14px;
+  padding: 8px 25px;
+  font-family: "Poppins", sans-serif;
+}
+.repeat_selected_days  p,
+.both_details{
+  color: #676767;
+  font-weight: 400;
+  font-size: 14px !important;
+}
+.both_details_add{
+  font-size: 14px;
+}
+.datewise,.datewise li{
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  flex-direction: row;
+  justify-content: end;
+ 
+  padding: 10px;
+  border-radius: 100px;
+}
+.datewise li{
+  background-color: #fff;
+  align-items: center;
+}
+.datewise  span{
+  font-size: 13px;
+}
+.repeat_selected_days{
+  justify-content: space-between;
+}
+.repeat_selected_days ul{
+  display: flex;
+  flex-direction: row;
+}
+.repeat_selected_days ul li{
+  background: #F5F5F5;
+    text-transform: uppercase;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-right: 7px;
+}
+.repeat_selected_days ul li:nth-last-child(1){
+  margin-right: 0px;
+}
+.add_notestatus{
+  background: #594395;
+  padding: 8px 10px;
+  border-radius: 10px;
+  margin-top: 15px;
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+}
+.numberproduct{
+  position: relative;
+  background: #F4F4F4;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+.numberproduct p{
+  color: #fff;
+    background-color: #0000008f;
+    width: fit-content;
+    margin: auto;
+    position: absolute;
+    padding: 4px 7px;
+    border-radius: 100px;
+    top: 40%;
+    left: 36%;
+    font-size: 11px;
+} 
+.numberproduct img{
+width: auto;
+}
+.shoplist_info{
+  background: #594395;
+text-align: center;
+padding: 20px;
+color: #fff;
+font-family: "Poppins", sans-serif;
+font-size: 14px;
+border-radius: 10px;
+margin-bottom: 15px;
+}
+.productimges{
+  width: 43px !important;
+}
+.shop_addedproduct{
+  width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ 
+}
+.shop_addedproduct p{
+  border: 1px solid #F5F5F5;
+  padding: 6px 10px;
+  border-radius: 100px;
+  font-size: 14px;
+}
+.half_qnty{
+  background: #FFF1F0;
+  color: #E1251B;
+  border: none;
+  border-radius: 100px;
+  font-size: 15px;
+  padding: 5px 18px;
+  margin: 8px;
+}
+.full_qty{
+  background: #F3F3F3;
+  border: none;
+  border-radius: 100px;
+  color: #3F3F3F;
+  font-size: 15px;
+  padding: 5px 18px;
+  margin: 8px;
+}
+.bones{
+  font-size: 52px;
+}
+.services_treats{
+  font-weight: 600;
+  color: #000 !important;
+}

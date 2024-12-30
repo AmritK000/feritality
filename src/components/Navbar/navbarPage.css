@@ -1,0 +1,44 @@
+.custom-navbar {
+  background-color: #0d6efd;
+  /* padding: 10px 20px; */
+}
+.frisbee_custom_nabar {
+  position: relative;
+}
+.frisbee_custom_navabr {
+  background-color: #d3c0c0;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  /* height: 106px; */
+}
+.frisbee_custom_navabr img{
+    margin-top: 25px;
+}
+.frisbee_custom_navabr_child{
+  margin-right: 0;
+}
+.position-relative {
+  position: relative;
+}
+.frisbee_location_mai_nav {
+  margin-left: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.position-absolute {
+  position: absolute;
+}
+
+.translate-middle {
+  transform: translate(-50%, -50%);
+}
+
+.badge {
+  font-size: 0.75em; /* Adjust badge font size */
+}

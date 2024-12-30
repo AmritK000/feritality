@@ -1,0 +1,29 @@
+.slide-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .placeholder-img-wrapper {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+  }
+  
+  .placeholder-img {
+    width: 100%;
+    height: 100%;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+  }
+  
+  .placeholder-text {
+    width: 80%;
+    height: 20px;
+    background-color: #e0e0e0;
+    margin-top: 5px;
+  }
+  

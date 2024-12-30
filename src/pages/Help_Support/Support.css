@@ -1,0 +1,97 @@
+.support_need_help {
+  display: flex;
+  width: 100%;
+  margin-top: 2%px;
+}
+.support_need_help span {
+  font-family: "Jost";
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 43px;
+}
+.support_search_bar_main_div {
+  margin-top: 25px;
+}
+.support_main_class .ant-input-affix-wrapper:hover {
+  border: 1px solid black !important;
+}
+.support_main_class .ant-input-affix-wrapper:focus-within {
+  box-shadow: none !important;
+  border: 1px solid black !important;
+}
+.support_main_class .ant-input-affix-wrapper-lg {
+  padding: 15px 31px !important;
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius: 8px;
+}
+.support_main_class .ant-input-search-button {
+  height: 56px !important;
+  background-color: black !important;
+}
+.support_Accordian_main_div {
+  padding: 25px;
+  margin-top: 30px;
+}
+.support_promotions_heading {
+  font-family: jost;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 43px;
+}
+.support_accordian_question {
+  color: rgba(180, 180, 180, 1) !important;
+  background-color: white !important;
+  font-size: 20px;
+  line-height: 28px;
+  font-family: "Jost";
+  font-weight: 400;
+}
+.support_accordian_question:focus {
+  box-shadow: none !important;
+}
+.support_accordian_div {
+  margin-top: 35px;
+}
+.common_component_input_search:focus {
+  border: 1px solid black;
+  box-shadow: none;
+}
+/* .support_main_class:focus {
+  border: 1px solid black;
+  box-shadow: none;
+} */
+/* .support_main_content{
+  background-image: url("../../Image//support.png");
+} */
+@media only screen and (max-width: 768px) {
+  .support_need_help span {
+    font-size: 18px;
+  }
+  .support_promotions_heading {
+    font-size: 18px;
+  }
+  .support_accordian_question {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .support_promotions_heading {
+    font-size: 18px;
+  }
+  .support_accordian_question {
+    font-size: 14px;
+  }
+  .support_main_class .ant-input-affix-wrapper-lg {
+    padding: 6px 31px !important;
+  }
+  .support_main_class .ant-input-search-button {
+    height: 36px !important;
+  }
+  .support_need_help span {
+    font-size: 18px;
+  }
+  .support_need_help span {
+    font-size: 18px;
+  }
+}

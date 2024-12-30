@@ -1,0 +1,743 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/**/
+@font-face {
+    font-family: Segoe UI;
+    src: url("../font/Segoe\ UI.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face{
+    font-family: Miss Magnolia;
+    src: url("../font/miss-magnolia-script.otf");
+    font-weight: normal;
+    font-style: normal;
+  }
+:root {
+    --header-background-color:#101820;
+    --common-background:#fff;
+    --common-font:"Poppins", sans-serif;
+  }
+.header {
+    background-color: var(--header-background-color);
+    position: relative;
+    height: 71px;
+    padding: 17px;
+    z-index: 99999999;
+}
+.header .logo{
+    background-color:var(--common-background)  ;
+    position: relative;
+}
+.row{
+    width: 100%;
+}
+.btn{
+    font-family: Segoe UI;
+    color: #FFF;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    padding: 5px 29px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.notifications_dropdown {
+  max-height: 500px; /* Limit the height, adjust as needed to show 5 items */
+  overflow-y: auto;  /* Enable vertical scrolling */
+  padding-right: 10px; /* Add padding for better scroll experience */
+}
+
+.notification-item {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.notification-content {
+  display: flex;
+  align-items: center;
+}
+
+.notification-image {
+  width: 50px; /* Adjust the size */
+  height: 50px; /* Same size as width for perfect circle */
+  border-radius: 50%;
+  margin-right: 10px; /* Space between image and text */
+}
+
+.notification-text {
+  flex: 1; /* Allow text to take up remaining space */
+}
+
+.notification-separator {
+  border: none;
+  border-bottom: 1px solid #ddd; /* Make the line a bit more prominent */
+  margin: 10px 0; /* Space around the separator */
+  opacity: 0.8; /* Slightly reduce opacity to blend it in */
+}
+
+.show-more {
+  text-align: center;
+  color: #666;
+  font-size: 12px;
+  padding: 5px 0;
+}
+.drop_down{
+    list-style: none;
+}
+.drop_down_has{
+    position: relative;
+}
+.drop_down{
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    left: 0px;
+    top: 130%;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 10px;
+    z-index: 99;
+    min-width: 480px;
+    padding: 11px 0px;
+}
+.drop_down_has:hover .drop_down {
+  opacity: 1;
+  top: 102%;
+  visibility: visible;
+  padding: 0px;
+}
+.drop_down li a{
+  font-family: Segoe UI;
+    font-size: 16px;
+    line-height: 28px;
+    color: #000;
+    text-decoration: none;
+}
+.menu_list{
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+#dropdown_angeldown{
+  margin: 12px;
+}
+.menu_list li{
+  margin-right: 20px;
+}
+.store_location{
+  display: flex;
+  transform: translate(127px, -9px);
+  width: 235px;
+}
+
+.menu_list a ,
+.btn a,.location .drop_down_has{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.location{
+    padding: 0px;
+    list-style: none;
+    margin: 0px;
+}
+.logo
+{
+    position: absolute;
+    background-color: #fff;
+}
+.web{
+    padding: 0px;
+    list-style: none;
+    color: #fff;
+    background-color: #293a4a;
+    border-radius: 10px;
+    padding: 6px;
+    font-size: 15px;
+    margin: 0px;
+
+}
+.drop_down_has .drop_down li{
+  color: #000 !important;
+  border: 0;
+  box-shadow: none;
+  padding: 6px 10px;
+  margin: 0;
+  font-size: 14px;
+  color: #000;
+} 
+.bell_icons{
+position: relative;
+cursor: pointer;
+}
+.bell_icons svg{
+    position: relative;
+    font-size: 26px;
+    color: #fff;
+}
+.bell_icons span{
+    position: absolute;
+    background-color: red;
+    color: #fff;
+    border-radius: 100px;
+    width: 18px;
+    height: 18px;
+    right: -7px;
+    text-align: center;
+    top: 7px;
+    font-size: 12px;
+}
+.logo img{
+  background-color: #fff;
+    padding: 15px;
+    position: absolute;
+    top: 0px;
+    transform: translate(0px, -16px);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 15px 15px;
+    width: 91px;
+}
+.header .col-md-5 .d-flex,
+.header .col-md-4 .d-flex {
+    justify-content: space-between;
+}
+.location li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.location .drop_down_has #location{
+    background: rgba(41, 58, 74, 1);
+    /* padding: 14px; */
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    border-radius: 8px;
+    margin-right: 10px;
+
+}
+.btn:hover ,.btn:hover a{
+    background-color: #fff;
+    color: #000;
+}
+.code{
+    --common-font: "Poppins", sans-serif;
+    color: rgba(225, 37, 27, 1);
+    font-size: 16px;
+    margin: 14px 0px 0px;
+    font-weight: 500;
+}
+/* footer */
+.footer {
+    background-color: #232323;
+    color: #fff;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  .frisbee_footer_main_section {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    margin-top: 94px !important;
+  }
+  .newsletter_main_section {
+    position: absolute;
+    top: -118px;
+    width: 85%;
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .news_letter_main_section_div {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  .newsletter_main_section .social-icons i {
+    font-size: 18px;
+  }
+  .frisbee_project_veternary {
+    margin-top: 35px;
+  }
+  .frisbee_bottom_paragraph p {
+    margin-bottom: 0;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .frisbee_up_to_date_for_news {
+    display: flex;
+    flex-direction: column;
+  }
+  .frisbee_up_to_date_for_news span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    font-family: "Poppins", sans-serif;
+    color: #afafaf;
+  }
+  .frisbee_up_to_date_for_news h5 {
+    font-family: "Poppins";
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 0;
+  }
+  /* /// */
+  .frisbee_up_to_date_main_div {
+    width: 45%;
+    justify-content: space-between;
+  }
+  .frisbee_up_to_date_main_div .form-inline {
+    width: 66%;
+  }
+  .inputNewsletter {
+    position: relative;
+  }
+  .inputNewsletter input {
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 100px;
+    border: 1px solid #d6cdcd;
+    outline: none;
+    background: #f8f8f8;
+    font-size: 16px;
+  }
+  .inputNewsletter button {
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    font-family: "Poppins";
+  }
+  .inputNewsletter button:hover {
+    background: #f8f8f8;
+  }
+  .footer-btn {
+    position: absolute;
+    right: 0;
+    border-radius: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px 23px;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+    background: #efefef;
+  }
+  .frisbee_all_footer_icon {
+    gap: 5px;
+  }
+  .frisbee_all_footer_icon a {
+    background: #ebebeb;
+    padding: 7px;
+    width: 29px;
+    border-radius: 50%;
+    height: 29px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+  }
+  .frisbee_all_footer_icon a svg {
+    font-size: 15px;
+  }
+  .newsletter_main_section {
+    padding: 10px;
+    border-radius: 20px;
+  }
+  
+  .all_footer_link_heading_frisbee h5 {
+    font-family: "Poppins";
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: 500;
+  }
+  .all_footer_link_heading_frisbee ul li a {
+    font-weight: 400;
+    font-size: 17px;
+    color: rgba(164, 178, 191, 1) !important;
+    text-decoration: none !important;
+    font-family: Segoe UI;
+    line-height: 34px;
+  }
+  .all_footer_link_heading_frisbee ul li {
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(164, 178, 191, 1) !important;
+    text-decoration: none !important;
+    /* font-family: Segoe UI; */
+  }
+  .all_footer_link_heading_frisbee{
+    padding: 0px;
+  }
+  .frisbee_all_icon_for_location li svg {
+    background: #444b51;
+    padding: 7px;
+    width: 24px;
+    border-radius: 50%;
+    height: 23px;
+    margin-right: 4px;
+    color: white;
+  }
+  @media only screen and (max-width: 1441px) and (min-width: 1024px) {
+    .frisbee_up_to_date_main_div {
+      width: 55%;
+      justify-content: space-between;
+    }
+    .newsletter_main_section {
+      width: 92%;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .all_footer_link_heading_frisbee {
+      border: 1px solid #fff;
+      border-radius: 10px;
+      padding-bottom: 2px;
+      padding-top: 2px;
+    }
+  
+    .all_footer_link_heading_frisbee h5 {
+      display: flex;
+      width: 100%;
+      text-align: center;
+      font-size: 16px;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+    .frisbee_mobile_view_row_footer {
+      display: flex;
+      gap: 10px;
+      padding-inline: 10px;
+    }
+    .all_footer_link_heading_frisbee ul li a {
+      font-size: 16px;
+    }
+    .mobile_view_frisbee_footer_for_all_main {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+    .frisbee_up_to_date_main_div {
+      width: 100%;
+      justify-content: space-between;
+    }
+    .frisbee_up_to_date_main_div .form-inline {
+      width: 100%;
+    }
+    .inputNewsletter button {
+      font-size: 14px;
+    }
+    .inputNewsletter input {
+      font-size: 14px;
+    }
+    .frisbee_all_footer_icon {
+      gap: 15px;
+    }
+    .frisbee_mobile_for_pic {
+      gap: 5px;
+    }
+    .newsletter_main_section {
+      top: -135px;
+    }
+    /* Home Page*/
+    #featured_grooming .main_heading,
+    .view_btn ,
+     .location_creation a p, 
+     #featured_grooming .sub_heading {
+      text-align: center !important;
+  }
+  .sub_heading {
+    width: 100% !important;
+    margin: auto;
+}
+.main_heading {
+  font-size: 23px;
+}
+.adopt_banner {
+  position: relative;
+  height: 200px;
+}
+.adoptbanner_innnercontent {
+  position: absolute;
+  top: 0px !important;
+  width: 100%;
+  text-align: center;
+  left: 0% !important;
+  padding: 27px 0px;
+}
+.enquiery_form {
+  background: rgba(208, 237, 255, 1);
+  border-radius: 69px 60px 60px 60px;
+  position: absolute;
+  right: 0px;
+  text-align: center;
+  height: 279px;
+  padding: 15px 15px;
+}
+.adoptbanner_innnercontent h1 {
+  font-size: 26px;
+  font-weight: 400;
+  --common-font: "Poppins", sans-serif;
+  margin: 6px 0px;
+  text-transform: capitalize;
+  color: #fff;
+  line-height: 36px;
+}
+.store_location {
+  display: flex;
+  transform: translate(127px, -9px) !important;
+}
+  }
+  
+.phsicaly_letter{
+  font-family: Segoe UI;
+    margin: 0px;
+    line-height: 26px;
+    font-size: 16px;
+    color: rgba(63, 63, 63, 1);
+    text-align: center;
+}  
+.verrificatio_doc{
+  font-family: Segoe UI;
+  margin: 0px;
+  font-weight: 700;
+  line-height: 26px;
+  font-size: 20px;
+  color: rgba(63, 63, 63, 1);
+  text-align: center;
+}
+.custom-file-upload {
+  width: 327px;
+  margin: 0px auto;
+  display: inline-block;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-family: Segoe UI;
+  font-weight: 400;
+  line-height: 26px;
+  font-size: 18px;
+  color: rgba(225, 37, 27, 1);
+  text-align: center;
+  border: none;
+  border-radius: 100px;
+  border: 2px solid rgba(235, 235, 235, 1);
+}
+
+#file-upload {
+  display: none;
+}
+.upload_section{
+  text-align: center;
+  display: flex;
+    flex-direction: column;
+
+}
+.file-name {
+  margin: 10px;
+  color: #555;
+  display: inline-block;
+  padding: 8px 10px;
+  cursor: pointer;
+  font-family: Segoe UI;
+  font-weight: 600;
+  line-height: 26px;
+  font-size: 18px;
+  text-align: center;
+  border: none;
+  border-radius: 100px;
+  border: 2px solid rgba(235, 235, 235, 1);
+  width: 327px;
+  margin: 10px auto;
+}
+.booknow_btn:hover{
+  color: rgba(255, 241, 240, 1);
+    background: rgba(225, 37, 27, 1);
+}
+.booknow_btn{
+  padding: 10px 26px;
+    background: rgba(255, 241, 240, 1);
+    color: rgba(225, 37, 27, 1);
+    border: none;
+    border-radius: 100px;
+    font-family: Segoe UI;
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 18px;
+    text-align: center;
+}
+.booknow .modal-content{    
+  padding: 40px 0px;
+}
+.model_footer{
+  text-align: center;
+}
+.doginfo_dtailsinnersection p{
+  margin: 0px;
+}
+#product-inner .product_price {
+  justify-content: start;
+}
+#product-inner button{
+      width: 160px;
+}
+.option_cart{
+  color: rgba(225, 37, 27, 1);
+
+}
+.active{
+  position: relative;
+  color: #fff;
+  cursor: pointer;
+}
+.nested-services{
+  padding: 0px;
+  margin: 0px 11px;
+  position: relative !important;
+  list-style: none;
+  background: #fff;
+}
+.nested-services li{
+  margin: 5px 0px 5px 0px !important;
+    padding: 9px 10px !important;
+    height: auto !important;
+    border-bottom: 1px solid #80808063;
+    border-radius: 0px !important;
+}
+.nested-services a{
+color: #000 !important;  
+}
+.addnew_address{
+  background: rgba(243, 243, 243, 1);
+ border-radius: 5px;
+ padding: 10px;
+}
+.add_new_address:hover{
+  color: #e1251b !important;
+  background: #fff !important;
+  border: 1px solid #e1251b !important;
+}
+.add_new_address{ 
+  padding: 8px 20px 8px;
+  margin-bottom: 16px;
+  border-radius: 100px;
+  border: 1px solid #e1251b !important;
+  font-family: "Poppins";
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #e1251b !important;
+    color: #fff;
+    border: none;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 32.52%, rgba(0, 0, 0, 0.2) 100%);
+}
+.addnew_address span{
+  color: #000;
+    font-family: Segoe UI;
+    line-height: 20px;
+    margin-left: 16px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.addnew_address input[type="radio"]{
+  width: 19px;
+  height: 19px;
+}
+.addnew_address p{
+  color: rgba(86, 86, 86, 1);
+  font-family: Segoe UI;
+  line-height: 25px;
+  margin: 0px;
+}
+.save_btn input{
+  margin:0px 10px;
+}
+.save_info{
+  font-weight: 600;
+  color: #000 !important;
+}
+.save_btn{
+  display: flex;
+    align-items: center;
+}
+.form-field{
+  font-size: 16px;
+  color: rgba(86, 86, 86, 1);
+  font-family: Segoe UI;
+  background-color: #fff;
+  border: none;
+  width: 100%;
+  margin: 8px;
+  padding: 10px 20px;
+  border-radius: 100px;
+}
+.pet_slides .grooming_board_cardbox p{
+  position: absolute;
+    top: 0px;
+    z-index: 999;
+    text-align: center;
+    width: 59%;
+    padding: 7px;
+    background-color: #c02017;
+    color: #fff;
+    border-radius: 0px 0px 10px 10px;
+    margin: auto;
+    font-size: 13px;
+    margin-left: 36px;
+}
+.profile-container {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.profile-image:hover {
+  transform: scale(1.1);
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 150px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.profile-dropdown li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.profile-dropdown li:hover {
+  background-color: #f0f0f0;
+}

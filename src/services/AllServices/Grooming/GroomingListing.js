@@ -1,0 +1,145 @@
+import React, { useEffect, useRef, useState } from "react";
+import { FaLocationDot } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+import { ASSETS_BASE_URL } from "../../../config/constants";
+import RatingsStar from "../../../components/RatingsStar";
+import { list } from "../../../controllers/store/storeController";
+import { ListEffectSkelton } from "../../../components/SkeltonEffect/ListEffectSkelton";
+import "../../AllServices/grooming.css"
+
+
+const GroomingListing = () => {
+    const [ShopList, setShopList] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
+    const [currentPage, setCurrentPage] = useState(1);
+    const [LIMIT, setLimit] = useState(10);
+    const [totalPages, setTotalPages] = useState(1);
+    const [SKIP, setSkip] = useState(0);
+    const targetRef = useRef(null);
+    const [showRequest, setShowRequest] = useState("");
+    const handleShowRequest = (value) => {
+        setShowRequest(value);
+    };
+
+    /*********************************************************
+    *  This function is use to fetch adoption center list
+    *********************************************************/
+    const groomingShopList = async () => {
+        setShopList([]);
+        setIsLoading(true);
+        try {
+            const longitude = localStorage.getItem('LONGITUDE');
+            const latitude = localStorage.getItem('LATITUDE');
+            const storedData = JSON.parse(localStorage.getItem("serviceListData"))
+            const groomingIds = storedData.data.find((item) => item.slug === "grooming")
+            // setCategortId(groomingIds?._id);
+
+            const options = {
+                type: "",
+                condition: {
+                    ...(showRequest ? { status: showRequest } : null),
+                },
+                filter: {
+                    in_store: "N"
+                },
+                longitude: longitude,
+                latitude: latitude,
+                category: groomingIds?._id,
+                select: {},
+                sort: { "_id": -1 },
+                page: currentPage,
+                skip: SKIP ? SKIP : 0,
+                limit: LIMIT ? LIMIT : 10
+            }
+            const listData = await list(options);
+            // console.log("grooming store listData", listData)
+            if (listData?.status === true) {
+                setShopList(listData.result);
+            }
+        } catch (error) {
+            console.log("Failed to fetch groomoing shop list: ", error)
+        }
+    }
+
+    /*********************************************************
+     *  This function is load when page load and with dependency update
+    *********************************************************/
+    useEffect(() => {
+        groomingShopList();
+        targetRef.current.scrollIntoView({
+            behavior: 'smooth',
+        });
+        document.title = "Frisbee website || Grooming store list"
+    }, [currentPage])
+
+
+    return (
+        <>
+            <div className="row groomig_innerlisting" ref={targetRef}>
+                <div className="col-md-12">
+                    {ShopList?.length > 0 ? (ShopList.map((item, index) => (
+                        <>
+                            <div className="avenue_pet" key={index}>
+
+                                <div className="pet_avenue">
+                                    <img src={`${ASSETS_BASE_URL}${item.image}`} alt={item.name} />
+                                    <p>20% OFF</p>
+                                </div>
+                                <div className="rightside_list">
+                                    <RatingsStar rating={item?.ratings} />
+                                    <h1 className="my-0">{item?.storeData?.shop_name}</h1>
+                                    <p className="mx-0">{item?.storeData?.short_details?.length > 60 ? `${item?.storeData?.short_details?.substring(0, 60)}...` : item?.storeData?.short_details}</p>
+                                    <div>
+                                        {/* <p className="mx-0"><FaLocationDot id="location" />{item?.storeData?.address?.length > 60 ? `${item?.storeData?.address.substring(0, 60)}...` : item?.storeData?.address}</p> */}
+                                        <a
+                                            href={`https://www.google.com/maps/dir/?api=1&destination=${item?.latitude},${item?.longitude}`}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <p className="mx-0">
+                                                <FaLocationDot id="location" />
+                                                {item?.storeData?.address?.length > 60 ? `${item?.storeData?.address.substring(0, 60)}...` : item?.storeData?.address}
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <Link to={`/services/grooming/${item?._id} `}>
+                                        <button>Book Now</button>
+                                    </Link>
+                                </div>
+
+                            </div>
+                        </>
+                    ))
+                    ) : (
+                        <ListEffectSkelton />
+                    )}
+                </div>
+            </div>
+            {/* Pagination Controls */}
+            <div className="pagination">
+                <button
+                    disabled={currentPage === 1}
+                    onClick={() => setCurrentPage(currentPage - 1)}
+                    className="pagination-btn"
+                >
+                    &lt;
+                </button>
+                <span className="pagination-current">
+                    {currentPage}
+                </span>
+                <button
+                    disabled={currentPage === totalPages}
+                    onClick={() => setCurrentPage(currentPage + 1)}
+                    className="pagination-btn"
+                >
+                    &gt;
+                </button>
+            </div>
+        </>
+    )
+}
+export default GroomingListing;
+
+

@@ -1,0 +1,81 @@
+.image-gallery-content{
+    display: flex !important;
+    flex-direction: row-reverse !important;
+}
+.image-gallery-thumbnails .image-gallery-thumbnails-container {
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    top: 57px;
+    left: 70px;
+    /* position: fixed; */
+}
+.error-text {
+    color: red;
+    font-size: 0.875rem; /* Adjust font size as needed */
+    margin-top: 0.25rem; /* Adjust spacing as needed */
+  }
+  
+  .error-input {
+    border-color: red; /* Optional: Highlight the input field with a red border */
+    border-width: 2px; /* Adjust border width as needed */
+  }
+  
+.Toastify__toast-container {
+    padding: 37px;
+    margin-top: 36px;
+    color:"black";
+    bottom: auto !important; /* Override any bottom styles */
+    left: auto !important; /* Override any left styles */
+    z-index: 9999 !important; /* Ensure the toast appears above all other elements */
+}
+.frequentlyslider{
+    overflow: hidden;
+    margin-left: 55px;
+}
+.image-gallery-slides{
+    position: relative;
+    /* background-color: gray; */
+    padding: 65px 50px;
+    background: rgba(244, 244, 244, 1);
+    border-radius: 15px;
+}
+.slide-item .grooming_board .grooming_board_productcard .img_container img{
+    margin: auto;
+}
+.image-gallery-thumbnail .image-gallery-thumbnail-image {
+    width: 70px !important;
+}
+  .image-gallery-image{
+    width: 334px !important;
+    height: 373px !important;
+  }
+  .image-gallery-thumbnail{
+    padding: 11px;
+    border-radius: 10px;
+  }
+
+  .image-gallery-thumbnail.active, .image-gallery-thumbnail:focus {
+    outline: none;
+    border: 2px solid #121517 !important;
+    padding: 11px;
+    border-radius: 10px;
+}
+.image-gallery-thumbnail .image-gallery-thumbnail-image {
+    border-radius: 12px;
+}
+.image-gallery-description{
+    transform: translate(11px, 0px);
+    left: unset !important;
+    top: -69px !important;
+    bottom: unset !important;
+    border-radius: 0px 0px 37px 37px !important;
+    width: 66px !important;
+    height: 66px !important;
+    line-height: 20px !important;
+}
+.image-gallery-swipe{
+    overflow: hidden;
+}
